@@ -177,6 +177,11 @@
     color: var(--slate); margin-bottom: 56px;
     border-bottom: 1px solid var(--line); padding-bottom: 20px;
   }
+  .sub-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem; font-weight: 300;
+    color: var(--slate); margin-bottom: 28px;
+  }
 
   /* ── PAPERS ───────────────────────────────────────────── */
   .paper-grid { display: flex; flex-direction: column; gap: 40px; }
@@ -359,7 +364,7 @@
     <p class="hero-role">
       Senior Economist at the <strong>Banco Central de Chile</strong>.<br>
       Ph.D. in Economics, European University Institute.<br>
-      Quantitative macroeconomics, labor markets, and human capital — with a focus on gender gaps and educational inequality across countries.
+      Quantitative macroeconomics, labor markets, and human capital — with a focus on gender gaps, educational inequality, and technology adoption across countries.
     </p>
     <div class="hero-contact">
       <a href="mailto:cvarona@bcentral.cl">cvarona@bcentral.cl</a>
@@ -375,6 +380,7 @@
       <span class="field-pill">International Economics</span>
       <span class="field-pill">Human Capital</span>
       <span class="field-pill">Gender Economics</span>
+      <span class="field-pill">Economics of AI</span>
     </div>
     <div class="bio-block">
       <p>
@@ -389,6 +395,11 @@
         countries. A second strand — joint with Agustín Díaz and Nadim Elayan-Balagué — uses
         linked administrative microdata and a calibrated dynastic general equilibrium OLG model
         to study talent misallocation and education policy in Chile.
+      </p>
+      <p>
+        A third strand — joint with Jeanne Lafortune, José Tessada and Dagoberto Quevedo — studies
+        how rigidities in Chilean employment law affect firms' adoption of new technologies, using
+        large language models to classify administrative employment contracts.
       </p>
       <p>
         I hold a Ph.D. in Economics from the <strong>European University Institute</strong>
@@ -406,21 +417,23 @@
     <div class="section-label">Academic Work</div>
     <h2 class="section-title">Research</h2>
 
-    <div class="paper-grid">
+    <h3 class="sub-title">Publications</h3>
+    <div class="paper-grid" style="margin-bottom: 64px;">
 
-      <!-- PUBLICATION -->
+      <!-- PUBLICATION: EER -->
       <div class="paper-card">
         <div class="paper-status status-pub">■ Published</div>
         <div class="paper-title">Labor Market Implications of Education Mismatch</div>
         <div class="paper-authors">Carla Varona Cervantes &amp; Russell Cooper</div>
         <div class="paper-abstract">
           <em>European Economic Review</em>, vol. 148, 2022, article 104179.
+          <a href="https://doi.org/10.1016/j.euroecorev.2022.104179" style="color:var(--steel);">DOI</a>
         </div>
       </div>
 
-      <!-- EJ CONDITIONAL ACCEPT -->
+      <!-- PUBLICATION: EJ FORTHCOMING -->
       <div class="paper-card accepted">
-        <div class="paper-status status-accepted">◆ Conditionally Accepted — The Economic Journal</div>
+        <div class="paper-status status-accepted">◆ Forthcoming — The Economic Journal</div>
         <div class="paper-title">Determining Gender Differences in Education and Labor Market Outcomes</div>
         <div class="paper-authors">Carla Varona Cervantes &amp; Russell Cooper</div>
         <button class="abstract-toggle" onclick="toggleAbstract(this)">
@@ -443,6 +456,11 @@
           </div>
         </div>
       </div>
+
+    </div>
+
+    <h3 class="sub-title">Working Papers</h3>
+    <div class="paper-grid">
 
       <!-- POLICY INTERVENTIONS WP -->
       <div class="paper-card submitted">
@@ -482,6 +500,26 @@
     <div class="section-label">Ongoing Research</div>
     <h2 class="section-title">Work in Progress</h2>
     <div class="paper-grid">
+
+      <!-- CONTRACT RIGIDITY WIP -->
+      <div class="paper-card wp" style="border-left-color: #bdbdbd;">
+        <div class="paper-status status-wp">○ Work in Progress, 2026</div>
+        <div class="paper-title">Employment Contract Rigidity and Technology Adoption in Chile</div>
+        <div class="paper-authors">Carla Varona Cervantes, Jeanne Lafortune, José Tessada &amp; Dagoberto Quevedo</div>
+        <button class="abstract-toggle" onclick="toggleAbstract(this)">
+          <span>▸</span> Abstract
+        </button>
+        <div class="abstract-content">
+          <div class="paper-abstract">
+            Chilean labor law restricts unilateral changes to contractually specified job functions,
+            potentially constraining firms' ability to reallocate workers across tasks when adopting
+            new technologies. We classify administrative employment contracts from the Dirección del
+            Trabajo according to how adaptably job functions are defined, using large language models,
+            and combine this classification with firm-level data to assess whether contractual
+            rigidity slows technology adoption.
+          </div>
+        </div>
+      </div>
 
       <!-- HC MISALLOCATION WIP -->
       <div class="paper-card wp" style="border-left-color: #bdbdbd;">
@@ -726,13 +764,14 @@
     </p>
     <p style="font-size:0.85rem; color:rgba(255,255,255,0.45); margin-top: 32px;">
       Languages: English (fluent) · Spanish (native) · Italian (advanced)<br>
+      Software: MATLAB · Python · Stata · R · LaTeX<br>
       Nationality: Cuban, Spanish
     </p>
   </div>
 </section>
 
 <footer>
-  <strong>Carla Varona Cervantes</strong> · Senior Economist, Banco Central de Chile · Updated May 2026
+  <strong>Carla Varona Cervantes</strong> · Senior Economist, Banco Central de Chile · Updated August 2026
 </footer>
 
 <script>
